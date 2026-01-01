@@ -6,6 +6,13 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 
 | REP | Title | Author | Status | Type |
 |-----|-------|--------|--------|------|
+| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors | 📝 Draft | Standard |
+| **[2](REP-0002.md)** | PSRT Client-Side Order Expiration | Radiant Core Contributors | 📝 Draft | Standard |
+| **[3](REP-0003.md)** | Asynchronous JSON-RPC Server | Radiant Core Contributors | 📝 Draft | Standard |
+| **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors | 📝 Draft | Standard |
+| **[5](REP-0005.md)** | OP_CHECKTEMPLATEVERIFY (CTV) Implementation | Radiant Core Contributors | 📝 Draft | Standard |
+| **[1001](REP-1001.md)** | Radiant Architecture Overview | Radiant Core Contributors | 📝 Draft | Informational |
+| **[1002](REP-1002.md)** | Radiant Security Best Practices | Radiant Core Contributors | 📝 Draft | Informational |
 | **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors | 🔄 Active | Process |
 
 *Legend: 📝 Draft | 🔄 Active | ✅ Final | ❌ Rejected | 🚫 Withdrawn*
@@ -56,19 +63,24 @@ Process changes and governance:
 
 | REP | Title | Author | Status | Description |
 |-----|-------|--------|--------|-------------|
-| *No Standard Track REPs yet* | | | | |
+| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements DNS-based peer discovery to improve network resilience and reduce reliance on hard-coded seed nodes |
+| **[2](REP-0002.md)** | PSRT Client-Side Order Expiration | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Adds optional max_age filtering to PSRT RPC methods to reduce stale order clutter and improve swap protocol efficiency |
+| **[3](REP-0003.md)** | Asynchronous JSON-RPC Server | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Refactors JSON-RPC server for async processing to improve throughput and enable concurrent request handling |
+| **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements BIP324 encrypted P2P transport to enhance network privacy and security against surveillance |
+| **[5](REP-0005.md)** | OP_CHECKTEMPLATEVERIFY (CTV) Implementation | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements BIP119 CTV opcode to enable trustless transaction covenants for vaults, congestion control, and batched payments |
 
 ### Informational REPs (Guidelines & Overviews)
 
 | REP | Title | Author | Status | Description |
 |-----|-------|--------|--------|-------------|
-| *No Informational REPs yet* | | | | |
+| **[1001](REP-1001.md)** | Radiant Architecture Overview | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Comprehensive overview of Radiant blockchain architecture, components, and design principles for developers and researchers |
+| **[1002](REP-1002.md)** | Radiant Security Best Practices | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Security guidelines for node operators, developers, and users covering operational security, development practices, and user protection |
 
 ### Process REPs (Governance & Procedures)
 
 | REP | Title | Author | Status | Description |
 |-----|-------|--------|--------|-------------|
-| **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors | 🔄 Active | Defines the REP process, format, and guidelines for submitting and managing REPs |
+| **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors <info@radiantfoundation.org> | 🔄 Active | Defines the REP process, format, and guidelines for submitting and managing Radiant Enhancement Proposals |
 
 ## Submitting a REP
 
