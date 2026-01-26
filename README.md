@@ -14,6 +14,17 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 | **[1001](REP-1001.md)** | Radiant Architecture Overview | Radiant Core Contributors | 📝 Draft | Informational |
 | **[1002](REP-1002.md)** | Radiant Security Best Practices | Radiant Core Contributors | 📝 Draft | Informational |
 | **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors | 🔄 Active | Process |
+| **[2002](REP-2002.md)** | Radiant Developer Tools Ecosystem | Radiant Core Contributors | 📝 Draft | Process |
+| **[3001](REP-3001.md)** | Glyph Protocol v2 (Core) | C. Donnachie | 📝 Draft | Application |
+| **[3002](REP-3002.md)** | Glyph v2 Envelopes | C. Donnachie | 📝 Draft | Application |
+| **[3003](REP-3003.md)** | Glyph v2 Test Vectors | C. Donnachie | 📝 Draft | Application |
+| **[3004](REP-3004.md)** | Glyph v2 Indexer Guide | C. Donnachie | 📝 Draft | Application |
+| **[3005](REP-3005.md)** | Game Item Profile (game_item_v1) | C. Donnachie | 📝 Draft | Application |
+| **[3006](REP-3006.md)** | Encrypted Content Extension | C. Donnachie | 📝 Draft | Application |
+| **[3007](REP-3007.md)** | Encrypted Content Test Vectors | C. Donnachie | 📝 Draft | Application |
+| **[3008](REP-3008.md)** | Recipient Key Wrapping | C. Donnachie | 📝 Draft | Application |
+| **[3009](REP-3009.md)** | Timelock / Reveal Mechanisms | C. Donnachie | 📝 Draft | Application |
+| **[3010](REP-3010.md)** | Glyph Mining Enhancement: Multi-Algorithm POW & Dynamic Difficulty | Radiant Core Contributors | 📝 Draft | Application |
 
 *Legend: 📝 Draft | 🔄 Active | ✅ Final | ❌ Rejected | 🚫 Withdrawn*
 
@@ -49,6 +60,13 @@ Process changes and governance:
 - Security disclosure processes
 - Governance guidelines
 
+### Application Track (REP-3000 to REP-3999)
+Application-layer protocols and token standards:
+- Glyph token protocol specifications
+- NFT and asset standards
+- Encryption and privacy extensions
+- Application profiles (game items, etc.)
+
 ## REP Status Legend
 
 - 📝 **Draft**: Initial proposal, being discussed
@@ -81,6 +99,22 @@ Process changes and governance:
 | REP | Title | Author | Status | Description |
 |-----|-------|--------|--------|-------------|
 | **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors <info@radiantfoundation.org> | 🔄 Active | Defines the REP process, format, and guidelines for submitting and managing Radiant Enhancement Proposals |
+| **[2002](REP-2002.md)** | Radiant Developer Tools Ecosystem | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Defines the ecosystem of developer tools for Radiant blockchain |
+
+### Application Track REPs (Glyph Protocol v2)
+
+| REP | Title | Author | Status | Description |
+|-----|-------|--------|--------|-------------|
+| **[3001](REP-3001.md)** | Glyph Protocol v2 (Core) | C. Donnachie | 📝 Draft | Core specification for Glyph v2: structured smart assets with typed files, bundles, previews, and mutable state |
+| **[3002](REP-3002.md)** | Glyph v2 Envelopes | C. Donnachie | 📝 Draft | Exact script templates for commit/reveal/update envelopes (Style A/B) |
+| **[3003](REP-3003.md)** | Glyph v2 Test Vectors | C. Donnachie | 📝 Draft | Deterministic test vectors for CBOR, SHA256, and envelope payloads |
+| **[3004](REP-3004.md)** | Glyph v2 Indexer Guide | C. Donnachie | 📝 Draft | Implementation guide for indexers with C++ examples and DB schema |
+| **[3005](REP-3005.md)** | Game Item Profile (game_item_v1) | C. Donnachie | 📝 Draft | Application profile for game items with stats, effects, and mutable state |
+| **[3006](REP-3006.md)** | Encrypted Content Extension | C. Donnachie | 📝 Draft | Optional encryption for Glyph payloads with AEAD and key delivery |
+| **[3007](REP-3007.md)** | Encrypted Content Test Vectors | C. Donnachie | 📝 Draft | Test vectors for AES-256-GCM, ChaCha20-Poly1305, and scrypt |
+| **[3008](REP-3008.md)** | Recipient Key Wrapping | C. Donnachie | 📝 Draft | X25519-HKDF-AES256GCM key wrapping for multi-recipient encryption |
+| **[3009](REP-3009.md)** | Timelock / Reveal Mechanisms | C. Donnachie | 📝 Draft | Hash-commit and scheduled key reveal for encrypted Glyphs |
+| **[3010](REP-3010.md)** | Glyph Mining Enhancement | Radiant Core Contributors | 📝 Draft | Multi-Algorithm POW & Dynamic Difficulty for Glyph mining contracts |
 
 ## Submitting a REP
 
