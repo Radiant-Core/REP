@@ -6,7 +6,7 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 
 | REP | Title | Author | Status | Type |
 |-----|-------|--------|--------|------|
-| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors | 📝 Draft | Standard |
+| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors | ✅ Final | Standard |
 | **[2](REP-0002.md)** | PSRT Client-Side Order Expiration | Radiant Core Contributors | 📝 Draft | Standard |
 | **[3](REP-0003.md)** | Asynchronous JSON-RPC Server | Radiant Core Contributors | 📝 Draft | Standard |
 | **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors | 📝 Draft | Standard |
@@ -25,12 +25,13 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 | **[3007](REP-3007.md)** | Encrypted Content Test Vectors | C. Donnachie | 📝 Draft | Application |
 | **[3008](REP-3008.md)** | Recipient Key Wrapping | C. Donnachie | 📝 Draft | Application |
 | **[3009](REP-3009.md)** | Timelock / Reveal Mechanisms | C. Donnachie | 📝 Draft | Application |
-| **[3010](REP-3010.md)** | Glyph Mining Enhancement: Multi-Algorithm POW & Dynamic Difficulty | Radiant Core Contributors | 📝 Draft | Application |
-| **[3011](REP-3011.md)** | WAVE: P2P Radiant Blockchain Name System | Radiant Community | 📝 Draft | Application |
+| **[3010](REP-3010.md)** | Glyph Mining Enhancement: Multi-Algorithm POW & Dynamic Difficulty | Radiant Core Contributors | ✅ Final | Application |
+| **[3011](REP-3011.md)** | WAVE: P2P Radiant Blockchain Name System | Radiant Community | ✅ Final | Application |
 | **[3012](REP-3012.md)** | Glyph On-Chain Royalties | Radiant Community | 📝 Draft | Application |
-| **[3013](REP-3013.md)** | Glyph Containers and Collections | Radiant Community | 📝 Draft | Application |
-| **[3014](REP-3014.md)** | Glyph Burn Mechanism | Radiant Community | 📝 Draft | Application |
-| **[3015](REP-3015.md)** | Glyph Authority Tokens | Radiant Community | 📝 Draft | Application |
+| **[3013](REP-3013.md)** | Glyph Containers and Collections | Radiant Community | ✅ Final | Application |
+| **[3014](REP-3014.md)** | Glyph Burn Mechanism | Radiant Community | ✅ Final | Application |
+| **[3015](REP-3015.md)** | Glyph Authority Tokens | Radiant Community | ✅ Final | Application |
+| **[3016](REP-3016.md)** | Induction Proofs for Code Continuity | Radiant Community | ✅ Final | Application |
 
 *Legend: 📝 Draft | 🔄 Active | ✅ Final | ❌ Rejected | 🚫 Withdrawn*
 
@@ -87,7 +88,7 @@ Application-layer protocols and token standards:
 
 | REP | Title | Author | Status | Description |
 |-----|-------|--------|--------|-------------|
-| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements DNS-based peer discovery to improve network resilience and reduce reliance on hard-coded seed nodes |
+| **[1](REP-0001.md)** | DNS Seeder Infrastructure for Network Discovery | Radiant Core Contributors <info@radiantfoundation.org> | ✅ Final | Implemented in Radiant Core 2.2 |
 | **[2](REP-0002.md)** | PSRT Client-Side Order Expiration | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Adds optional max_age filtering to PSRT RPC methods to reduce stale order clutter and improve swap protocol efficiency |
 | **[3](REP-0003.md)** | Asynchronous JSON-RPC Server | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Refactors JSON-RPC server for async processing to improve throughput and enable concurrent request handling |
 | **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements BIP324 encrypted P2P transport to enhance network privacy and security against surveillance |
@@ -121,12 +122,13 @@ Application-layer protocols and token standards:
 | **[3007](REP-3007.md)** | Encrypted Content Test Vectors | C. Donnachie | 📝 Draft | Test vectors for AES-256-GCM, ChaCha20-Poly1305, and scrypt |
 | **[3008](REP-3008.md)** | Recipient Key Wrapping | C. Donnachie | 📝 Draft | X25519-HKDF-AES256GCM key wrapping for multi-recipient encryption |
 | **[3009](REP-3009.md)** | Timelock / Reveal Mechanisms | C. Donnachie | 📝 Draft | Hash-commit and scheduled key reveal for encrypted Glyphs |
-| **[3010](REP-3010.md)** | Glyph Mining Enhancement | Radiant Core Contributors | 📝 Draft | Multi-Algorithm POW & Dynamic Difficulty for Glyph mining contracts |
-| **[3011](REP-3011.md)** | WAVE: P2P Name System | Radiant Community | 📝 Draft | Decentralized naming system for payments, hostnames, and DNS functions using Glyph NFTs |
-| **[3012](REP-3012.md)** | Glyph On-Chain Royalties | Radiant Community | 📝 Draft | Script-enforced royalty payments with percentage-based fees and multi-party splits |
-| **[3013](REP-3013.md)** | Glyph Containers and Collections | Radiant Community | 📝 Draft | GLYPH_CONTAINER (protocol ID 7) for hierarchical groupings of NFTs and assets |
-| **[3014](REP-3014.md)** | Glyph Burn Mechanism | Radiant Community | 📝 Draft | GLYPH_BURN (protocol ID 6) for permanent token destruction with photon recovery |
-| **[3015](REP-3015.md)** | Glyph Authority Tokens | Radiant Community | 📝 Draft | GLYPH_AUTHORITY (protocol ID 10) for transferable project authority and minting rights |
+| **[3010](REP-3010.md)** | Multi-Algorithm POW & DAA for dMint | Radiant Core Contributors | ✅ Final | V2 hard fork deployed at block 410,000 with OP_BLAKE3, OP_K12, OP_LSHIFT, OP_RSHIFT |
+| **[3011](REP-3011.md)** | WAVE: P2P Name System | Radiant Community | ✅ Final | Decentralized naming via Glyph NFTs, implemented in Photonic Wallet |
+| **[3012](REP-3012.md)** | Glyph On-Chain Royalties | Radiant Community | 📝 Draft | Script-enforced royalty payments with percentage-based fees |
+| **[3013](REP-3013.md)** | Glyph Containers and Collections | Radiant Community | ✅ Final | GLYPH_CONTAINER (protocol ID 7) for hierarchical groupings, implemented in Photonic Wallet |
+| **[3014](REP-3014.md)** | Glyph Burn Mechanism | Radiant Community | ✅ Final | GLYPH_BURN (protocol ID 6) with photon recovery, implemented in radiant-mcp-server |
+| **[3015](REP-3015.md)** | Glyph Authority Tokens | Radiant Community | ✅ Final | GLYPH_AUTHORITY (protocol ID 10) for transferable project authority |
+| **[3016](REP-3016.md)** | Induction Proofs | Radiant Community | ✅ Final | Code continuity verification via tx.state operators, implemented in RadiantScript |
 
 ## Submitting a REP
 
