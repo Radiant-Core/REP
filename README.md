@@ -12,6 +12,7 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 | **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors | 📝 Draft | Standard |
 | **[5](REP-0005.md)** | OP_CHECKTEMPLATEVERIFY (CTV) Implementation | Radiant Core Contributors | 📝 Draft | Standard |
 | **[6](REP-0006.md)** | Post-Quantum Cryptography Upgrade Path | Radiant Community | 📝 Draft | Standard |
+| **[7](REP-0007.md)** | OP_REFSUPPLY: Consensus Introspection of Global Reference Supply | Radiant Community | 💤 Deferred | Standard |
 | **[1001](REP-1001.md)** | Radiant Architecture Overview | Radiant Core Contributors | 📝 Draft | Informational |
 | **[1002](REP-1002.md)** | Radiant Security Best Practices | Radiant Core Contributors | 📝 Draft | Informational |
 | **[2001](REP-2001.md)** | REP Process Definition | Radiant Core Contributors | 🔄 Active | Process |
@@ -33,7 +34,7 @@ Radiant Enhancement Proposals (REPs) are design documents providing information 
 | **[3015](REP-3015.md)** | Glyph Authority Tokens | Radiant Community | ✅ Final | Application |
 | **[3016](REP-3016.md)** | Induction Proofs for Code Continuity | Radiant Community | ✅ Final | Application |
 
-*Legend: 📝 Draft | 🔄 Active | ✅ Final | ❌ Rejected | 🚫 Withdrawn*
+*Legend: 📝 Draft | 🔄 Active | ✅ Final | ❌ Rejected | 🚫 Withdrawn | 💤 Deferred*
 
 ## Quick Start
 
@@ -94,6 +95,7 @@ Application-layer protocols and token standards:
 | **[4](REP-0004.md)** | P2P Encryption (BIP324) Implementation | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements BIP324 encrypted P2P transport to enhance network privacy and security against surveillance |
 | **[5](REP-0005.md)** | OP_CHECKTEMPLATEVERIFY (CTV) Implementation | Radiant Core Contributors <info@radiantfoundation.org> | 📝 Draft | Implements BIP119 CTV opcode to enable trustless transaction covenants for vaults, congestion control, and batched payments |
 | **[6](REP-0006.md)** | Post-Quantum Cryptography Upgrade Path | Radiant Community | 📝 Draft | Phased migration from ECDSA to post-quantum signatures with upgrade hooks, hybrid schemes, and ecosystem preparation |
+| **[7](REP-0007.md)** | OP_REFSUPPLY: Consensus Introspection of Global Reference Supply | Radiant Community | 💤 Deferred | Global per-ref supply read for fungible proportional-share covenants. Requires a committed supply index (hard fork) + 128-bit math; RadiantMM RPL-LP works without it. Parked spec — recommends non-activation pending a concrete blocked use case |
 
 ### Informational REPs (Guidelines & Overviews)
 
